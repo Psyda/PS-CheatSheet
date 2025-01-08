@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Photoshop Shortcuts Cheatsheet
 
-## Getting Started
+[Live Demo](YOUR_VERCEL_LINK_HERE)
 
-First, run the development server:
+An interactive cheatsheet for Photoshop's essential keyboard shortcuts, built with Next.js and Tailwind CSS. This project features an elegant, responsive design with support for both Windows and Mac keyboard combinations.
+
+## Features
+
+- 🎨 Comprehensive collection of essential Photoshop shortcuts
+- 💻 Cross-platform support (Windows/Mac)
+- 🔄 Interactive UI with expandable modifier keys
+- 📱 Fully responsive design
+- 🌙 Clean, modern interface
+- ⌨️ Keyboard-friendly navigation
+- 🎯 Organized by categories for easy reference
+
+## Categories Covered
+
+- Essential Navigation
+- Quick Tools
+- Tool Modifiers
+- View Controls
+- Layer Operations
+- Clipboard Operations
+- Undo/Redo Operations
+
+## Technical Details
+
+Built using:
+- Next.js 14 (App Router)
+- Tailwind CSS
+- Radix UI (via shadcn/ui)
+- Lucide React Icons
+- TypeScript
+
+## Local Development
 
 ```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/photoshop-shortcuts-cheatsheet.git
+
+# Navigate to the project directory
+cd photoshop-shortcuts-cheatsheet
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/
+│   ├── page.tsx           # Main cheatsheet component
+│   └── layout.tsx         # Root layout
+├── components/
+│   └── ui/               # shadcn/ui components
+├── public/
+│   └── ...              # Static assets
+└── package.json
+```
 
-## Learn More
+## Key Components
 
-To learn more about Next.js, take a look at the following resources:
+- `PhotoshopCheatsheet`: Main component that renders the entire cheatsheet
+- `ShortcutCard`: Individual shortcut card with expandable modifier hints
+- `ShortcutSection`: Groups related shortcuts together
+- `OSToggle`: Toggles between Mac and Windows shortcuts
+- `KeyCombo`: Renders keyboard shortcut combinations
+- `ModifierHint`: Shows additional modifier key information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT License - feel free to use this project for your own learning or as a starting point for your own cheatsheet application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Credits
+
+- Design inspired by modern application documentation sites
+- Icons provided by [Lucide](https://lucide.dev/)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+
+## Deployment
+
+This project is optimized for deployment on Vercel, but can be deployed on any platform that supports Next.js applications.
+
+---
+
+Made with ♥️ for the design community

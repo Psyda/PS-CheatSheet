@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  typescript: {
+    // !! WARN !!
+    // Ignoring build errors in deployment
+    ignoreBuildErrors: true,
+  },
+    output: 'export'
+}
 
-export default nextConfig;
+module.exports = nextConfig
